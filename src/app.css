@@ -1,3 +1,45 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/gray-dark.css';
+
+@import url('./style.css');
+@import url('./e1.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+:root {
+    --ts-speed: .3s
+}
+
+body {
+    font-family: "Inter", "Noto Sans JP", sans-serif;
+    transition: var(--ts-speed);
+    background-color: var(--gray-1);
+    color: var(--gray-12);
+    height: 100vh;
+}
+
+button {
+    transition: var(--ts-speed);
+}
+
+article {
+    padding: 20px;
+    transition: var(--ts-speed);
+}
+
+.top {
+    width: 100%;
+    padding: 10px;
+    border-bottom: solid 1px;
+    border-color: var(--gray-5);
+    position: sticky;
+    transition: var(--ts-speed);
+}
+
+body {
+    overflow-x: hidden;
+}
