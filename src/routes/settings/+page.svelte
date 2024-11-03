@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { page } from "$app/stores";
     export const dark = () => {
         if (document.documentElement.classList.contains('dark')) {
             document.documentElement.classList.remove('dark');
@@ -21,4 +22,10 @@
 
 <svelte:head>
     <title>SETTINGS | 23236</title>
+    <meta property="og:url" content="{$page.url.href}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="SETTINGS | 23236"/>
+    <meta property="og:description" content="設定。それだけ"/>
+    <meta property="og:site_name" content="23236"/>
+    <meta property="og:image" content="/favicon.png"/>
 </svelte:head>
